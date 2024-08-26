@@ -1,10 +1,32 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Chilean games
     </ion-title>
   </ion-toolbar>
 </ion-header>
+
+<div id="menu">
+  <!--Home--> 
+  <ion-button [routerLink]="['/home']">
+    <ion-icon name="home-outline" size="large"></ion-icon>
+  </ion-button>
+  <!--Inicio de sesion-->
+  <ion-button (click)="irLogin()">
+    <ion-icon name="log-in-outline" size="large"></ion-icon>
+  </ion-button>
+  <!--buscar-->
+  <ion-button>
+    <ion-icon name="search-outline" size="large"></ion-icon>
+  </ion-button>
+  <!--carrito-->
+  <!--favoritos-->
+  <!--miscompras-->
+  <!--perfil-->
+  <ion-button>
+    <ion-icon name="person-circle-outline" size="large"></ion-icon>
+  </ion-button>
+</div>
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
@@ -12,9 +34,4 @@
       <ion-title size="large">Blank</ion-title>
     </ion-toolbar>
   </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
 </ion-content>
